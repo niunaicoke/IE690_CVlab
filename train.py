@@ -250,11 +250,3 @@ print("Classification Report:")
 print(classification_report(true_labels, pred_labels, target_names=categories))
 
 
-cm = confusion_matrix(true_labels, pred_labels)
-plt.figure(figsize=(8, 6))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
-            xticklabels=categories, yticklabels=categories)
-plt.title('Confusion Matrix')
-plt.xlabel('Predicted')
-plt.ylabel('True')
-plt.show()
